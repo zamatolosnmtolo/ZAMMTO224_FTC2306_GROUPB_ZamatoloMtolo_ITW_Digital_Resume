@@ -1,118 +1,110 @@
-/* Global styles */
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    margin: 0;
-    padding: 0;
+  background-color: #e0a21f;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  background-color: #e0a21f;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.circle-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #e06f1f;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.circle h3 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.circle:hover {
+  background-color: #e03e1f;
+}
+
+#contact {
+  background-color: #e06f1f;
+  color: #fff;
+  padding: 20px;
+}
+
+#contact h2 {
+  margin-bottom: 20px;
+}
+
+#contact p {
+  margin-bottom: 10px;
+}
+
+#contact ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+#contact li {
+  margin-bottom: 10px;
+}
+
+#contact li:before {
+  content: "\2022";
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
   }
-  
-  /* Header styles */
-  header {
-    padding: 40px;
-    text-align: center;
-  }
-  
-  header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-  }
-  
-  header h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  header p {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  header nav {
-    margin-top: 20px;
-  }
-  
-  header nav a {
-    color: #333;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  /* Education section styles */
-  #education {
-    background-color: #f0f0f0;
-    padding: 40px;
-    text-align: center;
-  }
-  
-  #education h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  #education ul {
-    list-style-type: disc;
-    margin-left: 20px;
-  }
-  
-  /* Experience section styles */
-  #experience {
-    background-color: #f9f9f9;
-    padding: 40px;
-    text-align: center;
-  }
-  
-  #experience h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  #experience ul {
-    list-style-type: disc;
-    margin-left: 20px;
-  }
-  
-  /* References section styles */
-  #references {
-    background-color: #fafafa;
-    padding: 40px;
-    text-align: center;
-  }
-  
-  #references h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  #references ul {
-    list-style-type: disc;
-    margin-left: 20px;
-  }
-  
-  /* Footer styles */
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  footer nav {
-    margin-top: 20px;
-  }
-  
-  footer nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  /* Media queries for responsiveness */
-  @media (max-width: 768px) {
-    header,
-    #education,
-    #experience,
-    #references,
-    footer {
-      padding: 20px;
-    }
-  }
+}

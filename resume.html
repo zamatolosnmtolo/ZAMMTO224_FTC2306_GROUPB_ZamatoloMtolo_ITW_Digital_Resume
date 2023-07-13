@@ -1,71 +1,120 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>John Smith - Digital Resume</title>
-  <link rel="stylesheet" href="stylesheet.css">
+    <title>Zamatolo Mtolo - Resume</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <style>
+        .profile-image {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-  <h1>John Smith - Digital Resume</h1>
-
-  <!-- Skills Section -->
-  <div class="section">
-    <h2>Skills</h2>
-    <ul>
-      <li>Programming Languages: Python, Java, C++</li>
-      <li>Web Development: HTML, CSS, JavaScript</li>
-      <li>Database Management: SQL, MongoDB</li>
-      <li>Version Control: Git, GitHub</li>
-      <li>Data Analysis: Pandas, NumPy, Tableau</li>
-      <li>Project Management: Agile, Scrum</li>
-      <li>Problem Solving</li>
-      <li>Strong Communication Skills</li>
-    </ul>
-  </div>
-
-  <!-- Education Section -->
-  <div class="section">
-    <h2>Education</h2>
-    <div class="subsection">
-      <h3>Bachelor of Science in Computer Science, XYZ University, 2016-2020</h3>
-      <p>Relevant coursework: Algorithms, Data Structures, Software Engineering</p>
-      <p>GPA: 3.8</p>
-    </div>
-    <div class="subsection">
-      <h3>High School Diploma, ABC High School, 2012-2016</h3>
-      <p>Honors: Valedictorian</p>
-    </div>
-  </div>
-
-  <!-- Work Experience Section -->
-  <div class="section">
-    <h2>Work Experience</h2>
-    <div class="subsection">
-      <h3>Company A - Software Engineer, 2020-2022</h3>
-      <p>Responsibilities:</p>
-      <ul>
-        <li>Developed and maintained web applications using Python and Django</li>
-        <li>Collaborated with cross-functional teams to deliver high-quality software solutions</li>
-        <li>Implemented database designs and optimized queries for improved performance</li>
-      </ul>
-    </div>
-    <div class="subsection">
-      <h3>Company B - Intern, 2019</h3>
-      <p>Responsibilities:</p>
-      <ul>
-        <li>Assisted in testing and debugging software applications</li>
-        <li>Participated in code reviews and provided feedback for improvements</li>
-        <li>Contributed to the development of new features and enhancements</li>
-      </ul>
-    </div>
-    <div class="subsection">
-      <h3>Company C - Technical Support, 2017-2018</h3>
-      <p>Responsibilities:</p>
-      <ul>
-        <li>Provided technical assistance and troubleshooting to customers</li>
-        <li>Resolved software and hardware issues in a timely manner</li>
-        <li>Documented support cases and maintained knowledge base articles</li>
-      </ul>
-    </div>
-  </div>
+    <header>
+        <div id="top" class="hero">
+            <picture>
+                <source media="(min-width: 1024px)" srcset="fullength.jpg">
+                <source media="(min-width: 768px)" srcset="headshoulders.jpg">
+                <img src="face.jpg" alt="Profile Picture" class="profile-image">
+            </picture>
+            <h1>Zamatolo Mtolo</h1>
+        </div>
+    </header>
+    <nav class="menu">
+        <div id="menu">
+            <ul>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <article>
+            <h2 id="education">Education</h2>
+            <div class="section-content">
+                <p>
+                    Certificate in Software Development<br>
+                    Institution: Codespace Academy<br>
+                    Graduated in 2023<br>
+                </p>
+                <p>
+                    Certificate in International Aviation Support with Cargo, Cabin Crew, and Amadeus<br>
+                    Institution: Skyy Aviation Academy<br>
+                    Graduated in 2017<br>
+                </p>
+            </div>
+            <h2 id="experience">Experience</h2>
+            <div class="section-content">
+                <h4>Personal Assistant and Receptionist - Khasav, King International Airport</h4>
+                <ol>
+                    <li>Managing executives' calendars, schedules, and appointments</li>
+                    <li>Arranging and coordinating meetings, conferences, and travel arrangements</li>
+                    <li>Drafting, editing, and proofreading correspondence, reports, and presentations</li>
+                    <li>Maintaining and organizing files, records, and confidential information</li>
+                    <li>Screening and managing phone calls, emails, and other communications</li>
+                    <li>Handling expense reports, invoices, and financial documentation</li>
+                    <li>Providing general administrative support and office management</li>
+                </ol>
+                <h5>Personal Assistant to Director - IDada Hatchery and Poultry, Umkomaas</h5>
+                <ol>
+                    <li>Managing Director's calendar, schedules, and appointments</li>
+                    <li>Coordinating and liaising with internal and external stakeholders</li>
+                    <li>Drafting, editing, and proofreading correspondence, reports, and presentations</li>
+                    <li>Maintaining and organizing files, records, and confidential information</li>
+                    <li>Screening and managingphone calls, emails, and other communications</li>
+                    <li>Handling expense reports, invoices, and financial documentation</li>
+                    <li>Providing general administrative support and office management</li>
+                    <li>Maintaining confidentiality and handling sensitive information appropriately</li>
+                </ol>
+            </div>
+            <h2 id="skills">Skills</h2>
+            <div class="section-content">
+                <ul>
+                    <li>Problem-solving</li>
+                    <li>Telephone etiquette</li>
+                    <li>Communication and teamwork</li>
+                    <li>Management skills</li>
+                    <li>Microsoft Word, Excel, and Spreadsheets</li>
+                </ul>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="section-content">
+                <form action="https://formsubmit.co/your-email-here" method="POST">
+                    <label for="subject">Subject*:</label>
+                    <select name="subject" id="subject" required>
+                        <option value="" selected disabled>Select a subject</option>
+                        <option value="Job Inquiry">Job Inquiry</option>
+                        <option value="Freelance Opportunity">Freelance Opportunity</option>
+                        <option value="Collaboration">Collaboration</option>
+                        <option value="General Inquiry">General Inquiry</option>
+                    </select>
+                    <br><br>
+                    <label for="email">Your Email*:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                    <br><br>
+                    <label for="subscribe">Subscribe to Updates</label>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <br><br>
+                    <label for="terms"><input type="checkbox" id="terms" name="terms" required> I accept the terms and conditions *</label>
+                    <br><br>
+                    <input type="submit" value="Submit">
+                </form>
+                <p>Email: zamatolosnmtolo@gmail.com</p>
+                <p>Phone: +27657252659</p>
+                <li><a href="https://www.linkedin.com/in/zamatolo-mtolo-73b219179/">LinkedIn</a></li>
+                <li><a href="https://github.com/zamatolosnmtolo">GitHub</a></li>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>

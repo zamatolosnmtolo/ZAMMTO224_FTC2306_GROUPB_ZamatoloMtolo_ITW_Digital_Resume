@@ -5,24 +5,23 @@
 </head>
 <body>
   <nav class="nav-bar">
-    <div class="logo"></div>
+    </div>
     <ul class="nav-links">
       <li><a href="#education">Education</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#references">References</a></li>
+      <li><a href="#top">Home</a></li>
     </ul>
   </nav>
 
   <div class="hero">
+    <img src="Saved images/Header.jpg" alt="profile image">
     <h1>Zamatolo Mtolo</h1>
     <h2>Software Developer</h2>
   </div>
 
   <div class="resume-container">
-    <div class="image-container">
-      <img src="Saved images/IMG_20230714_002113_368.jpg" alt="Profile Image">
-    </div>
     <div class="resume-content">
       <h3 id="education">Education</h3>
       <p>
@@ -76,21 +75,57 @@
         </ul>
       </div>
 
-      <div class="References" id="References">
-        <h4>References</h4>
-        <p>
-          Happy Zwane - Store Manager, Khasav King Shaka International Airport <br>
-          Location : Durban, South Africa <br>  
-          Contact Details : 
-        </p>
+      <div class="references" id="references">
+        <h3>References</h3>
+        <div class="reference">
+          <img src="Saved images/tahnur.jpg" alt="Reference 1">
+          <p>
+            Happy Zwane - Store Manager, Khasav King Shaka International Airport <br>
+            Location: Durban, South Africa <br>  
+            Contact Details: 
+          </p>
+        </div>
 
-        <p>
-          Tahnur Mica Barnard - Au Pair <br>
-          Location : Johannesburg, South Africa <br>
-          Contact Details : 
-        </p>
+        <div class="reference">
+          <img src="reference2.jpg" alt="Reference 2">
+          <p>
+            Tahnur Mica Barnard - Au Pair <br>
+            Location: Johannesburg, South Africa <br>
+            Contact Details: 
+          </p>
+        </div>
+      </div>
 
       <a href="#top" class="scroll-top-button">Scroll to Top</a>
+    </div>
+    
+    <div class="form-container">
+      <form action="https://formsubmit.co/your-email-here" method="POST">
+        <label for="subject">Subject*:</label>
+        <select name="subject" id="subject" required>
+          <option value="" selected disabled>Select a subject</option>
+          <option value="Job Inquiry">Job Inquiry</option>
+          <option value="Freelance Opportunity">Freelance Opportunity</option>
+          <option value="Collaboration">Collaboration</option>
+          <option value="General Inquiry">General Inquiry</option>
+        </select>
+        <br><br>
+        <label for="email">Your Email*:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        <br><br>
+        <label for="subscribe">Subscribe to Updates</label>
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <br><br>
+        <label for="terms">
+          <input type="checkbox" id="terms" name="terms" required>
+          I accept the terms and conditions *
+        </label>
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>
     </div>
   </div>
 </body>

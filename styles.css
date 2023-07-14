@@ -53,12 +53,35 @@ body {
   margin-left: 10px;
 }
 
+#back-to-top {
+  position:fixed;
+  bottom: 80px;
+  right: 80px;
+}
+
 /* Hero Section */
 .hero {
-  background-color: #e06f1f;
-  color: #9d2b16;
+  position: relative;
+  color: #e06f1f;
   padding: 40px;
   text-align: center;
+}
+
+.hero-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("Saved images/images (1).png");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-content img {
@@ -69,11 +92,11 @@ body {
   margin-bottom: 20px;
 }
 
+
 /* Resume Section */
 .resume-container {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #e0a21f;
   padding: 40px;
-  max-width: 1200px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin: 0 auto;
 }
@@ -81,7 +104,7 @@ body {
 .resume-section {
   margin-bottom: 40px;
   background-color: #e06f1f;
-  color: #9d2b16;
+  color: #ffffff;
   padding: 20px;
 }
 

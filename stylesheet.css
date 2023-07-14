@@ -5,7 +5,6 @@ body, h1, h2, h3, p, ul, li {
 }
 
 .container {
-  max-width: 800px;
   margin: 0 auto;
   padding: 20px;
   display: grid;
@@ -14,13 +13,19 @@ body, h1, h2, h3, p, ul, li {
   background: linear-gradient(to right, #ffcc66 40%, #e0a21f 40%);
 }
 
+header.circle h1 {
+  display: flex;
+  margin-left: 10px;
+  text-align: center;
+  flex-direction: row;
+}
+
 header.circle {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   background-color: #e06f1f;
   color: #fff;
-  display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto 20px;
@@ -113,4 +118,36 @@ section {
 #contact li:before {
   content: "\2022";
   margin-right: 5px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  header.circle img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .circle-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .circle h3 {
+    font-size: 20px;
+  }
 }

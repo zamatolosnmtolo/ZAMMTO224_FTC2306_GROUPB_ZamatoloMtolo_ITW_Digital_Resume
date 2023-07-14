@@ -31,7 +31,7 @@ body {
 }
 
 .image-container {
-  width: 10%;
+  width: 50%;
   background-color: #9d5716;
   display: flex;
   justify-content: center;
@@ -39,8 +39,8 @@ body {
 }
 
 .image-container img {
-  max-width: 10%;
-  max-height: 200px; /* Adjusted the max-height of the images */
+  width: 50%;
+  height: 200px;
   object-fit: contain;
   border-radius: 50%;
 }

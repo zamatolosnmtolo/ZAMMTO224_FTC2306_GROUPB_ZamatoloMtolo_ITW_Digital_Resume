@@ -15,8 +15,8 @@ body, h1, h2, h3, p, ul, li {
 }
 
 header.circle {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background-color: #e06f1f;
   color: #fff;
@@ -27,8 +27,8 @@ header.circle {
 }
 
 header.circle img {
-  width: 150px;
-  height: 150px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
 }
 

@@ -1,120 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Zamatolo Mtolo - Resume</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <style>
-        .profile-image {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <header>
-        <div id="top" class="hero">
-            <picture>
-                <source media="(min-width: 1024px)" srcset="fullength.jpg">
-                <source media="(min-width: 768px)" srcset="headshoulders.jpg">
-                <img src="face.jpg" alt="Profile Picture" class="profile-image">
-            </picture>
-            <h1>Zamatolo Mtolo</h1>
+  <nav class="nav-bar">
+    <div class="logo">
+
+    </div>
+    <ul class="nav-links">
+      <li><a href="#education"></a></li>
+      <li><a href="#experience"></a></li>
+      <li><a href="#skills"></a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <h1>Zamatolo Mtolo</h1>
+    <h2>Software Developer</h2>
+  </div>
+
+  <div class="resume-container">
+    <div class="image-container">
+      <img src="Saved images/IMG_20230714_002113_368.jpg" alt="Profile Image">
+    </div>
+    <div class="resume-content">
+      <h3 id="education">Education</h3>
+      <p>
+        Certificate in Software Development<br>
+        Institution: Codespace Academy<br>
+        Graduated in 2023<br>
+      </p>
+      <p>
+        Certificate in International Aviation Support with Cargo, Cabin Crew, and Amadeus<br>
+        Institution: Skyy Aviation Academy<br>
+        Graduated in 2017<br>
+      </p>
+
+      <div class="experience" id="experience">
+        <h3>Experience</h3>
+        <div class="job">
+          <h4>Personal Assistant and Receptionist - Khasav, King International Airport</h4>
+          <ol>
+            <li>Managing executives' calendars, schedules, and appointments</li>
+            <li>Arranging and coordinating meetings, conferences, and travel arrangements</li>
+            <li>Drafting, editing, and proofreading correspondence, reports, and presentations</li>
+            <li>Maintaining and organizing files, records, and confidential information</li>
+            <li>Screening and managing phone calls, emails, and other communications</li>
+            <li>Handling expense reports, invoices, and financial documentation</li>
+            <li>Providing general administrative support and office management</li>
+          </ol>
         </div>
-    </header>
-    <nav class="menu">
-        <div id="menu">
-            <ul>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <div class="job">
+          <h4>Personal Assistant to Director - IDada Hatchery and Poultry, Umkomaas</h4>
+          <ol>
+            <li>Managing Director's calendar, schedules, and appointments</li>
+            <li>Coordinating and liaising with internal and external stakeholders</li>
+            <li>Drafting, editing, and proofreading correspondence, reports, and presentations</li>
+            <li>Maintaining and organizing files, records, and confidential information</li>
+            <li>Screening and managing phone calls, emails, and other communications</li>
+            <li>Handling expense reports, invoices, and financial documentation</li>
+            <li>Providing general administrative support and office management</li>
+            <li>Maintaining confidentiality and handling sensitive information appropriately</li>
+          </ol>
         </div>
-    </nav>
-    <section>
-        <article>
-            <h2 id="education">Education</h2>
-            <div class="section-content">
-                <p>
-                    Certificate in Software Development<br>
-                    Institution: Codespace Academy<br>
-                    Graduated in 2023<br>
-                </p>
-                <p>
-                    Certificate in International Aviation Support with Cargo, Cabin Crew, and Amadeus<br>
-                    Institution: Skyy Aviation Academy<br>
-                    Graduated in 2017<br>
-                </p>
-            </div>
-            <h2 id="experience">Experience</h2>
-            <div class="section-content">
-                <h4>Personal Assistant and Receptionist - Khasav, King International Airport</h4>
-                <ol>
-                    <li>Managing executives' calendars, schedules, and appointments</li>
-                    <li>Arranging and coordinating meetings, conferences, and travel arrangements</li>
-                    <li>Drafting, editing, and proofreading correspondence, reports, and presentations</li>
-                    <li>Maintaining and organizing files, records, and confidential information</li>
-                    <li>Screening and managing phone calls, emails, and other communications</li>
-                    <li>Handling expense reports, invoices, and financial documentation</li>
-                    <li>Providing general administrative support and office management</li>
-                </ol>
-                <h5>Personal Assistant to Director - IDada Hatchery and Poultry, Umkomaas</h5>
-                <ol>
-                    <li>Managing Director's calendar, schedules, and appointments</li>
-                    <li>Coordinating and liaising with internal and external stakeholders</li>
-                    <li>Drafting, editing, and proofreading correspondence, reports, and presentations</li>
-                    <li>Maintaining and organizing files, records, and confidential information</li>
-                    <li>Screening and managingphone calls, emails, and other communications</li>
-                    <li>Handling expense reports, invoices, and financial documentation</li>
-                    <li>Providing general administrative support and office management</li>
-                    <li>Maintaining confidentiality and handling sensitive information appropriately</li>
-                </ol>
-            </div>
-            <h2 id="skills">Skills</h2>
-            <div class="section-content">
-                <ul>
-                    <li>Problem-solving</li>
-                    <li>Telephone etiquette</li>
-                    <li>Communication and teamwork</li>
-                    <li>Management skills</li>
-                    <li>Microsoft Word, Excel, and Spreadsheets</li>
-                </ul>
-            </div>
-        </article>
-    </section>
-    <footer>
-        <section id="contact">
-            <h2>Contact</h2>
-            <div class="section-content">
-                <form action="https://formsubmit.co/your-email-here" method="POST">
-                    <label for="subject">Subject*:</label>
-                    <select name="subject" id="subject" required>
-                        <option value="" selected disabled>Select a subject</option>
-                        <option value="Job Inquiry">Job Inquiry</option>
-                        <option value="Freelance Opportunity">Freelance Opportunity</option>
-                        <option value="Collaboration">Collaboration</option>
-                        <option value="General Inquiry">General Inquiry</option>
-                    </select>
-                    <br><br>
-                    <label for="email">Your Email*:</label>
-                    <input type="email" id="email" name="email" required>
-                    <br><br>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" cols="50"></textarea>
-                    <br><br>
-                    <label for="subscribe">Subscribe to Updates</label>
-                    <input type="checkbox" id="subscribe" name="subscribe">
-                    <br><br>
-                    <label for="terms"><input type="checkbox" id="terms" name="terms" required> I accept the terms and conditions *</label>
-                    <br><br>
-                    <input type="submit" value="Submit">
-                </form>
-                <p>Email: zamatolosnmtolo@gmail.com</p>
-                <p>Phone: +27657252659</p>
-                <li><a href="https://www.linkedin.com/in/zamatolo-mtolo-73b219179/">LinkedIn</a></li>
-                <li><a href="https://github.com/zamatolosnmtolo">GitHub</a></li>
-            </div>
-        </section>
-    </footer>
+      </div>
+
+      <div class="skills" id="skills">
+        <h3>Skills</h3>
+        <ul>
+          <li>Programming languages: Java, Python, JavaScript</li>
+          <li>Web development: HTML, CSS, React</li>
+          <li>Version control: Git</li>
+          <li>Problem-solving and analytical thinking</li>
+          <li>Strong communication and teamwork skills</li>
+        </ul>
+      </div>
+
+      <a href="#top" class="scroll-top-button">Scroll to Top</a>
+    </div>
+  </div>
+
 </body>
 </html>
